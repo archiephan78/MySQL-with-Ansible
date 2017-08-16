@@ -1,0 +1,7 @@
+---
+# handlers file for mysql
+  - name: restart mysql service
+    sudo: yes
+    service: 
+      name: "{{ mysql_service }}" 
+      state: restarted
